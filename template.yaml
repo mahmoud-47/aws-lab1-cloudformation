@@ -13,7 +13,7 @@ Resources:
       Description: Shared temporary password for IAM lab users
       GenerateSecretString:
         PasswordLength: 16
-        ExcludeCharacters: '"@/\!#$%'
+        ExcludeCharacters: '"@/\'
         RequireEachIncludedType: true
 
   # ============================================================
