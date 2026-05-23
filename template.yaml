@@ -72,6 +72,7 @@ Resources:
       GroupName: S3UserGroup
       ManagedPolicyArns:
         - !Ref S3ListPolicy
+        - arn:aws:iam::aws:policy/IAMUserChangePassword
 
   # EC2 Group - can list AND create EC2 instances
   EC2UserGroup:
@@ -81,6 +82,7 @@ Resources:
       GroupName: EC2UserGroup
       ManagedPolicyArns:
         - !Ref EC2Policy
+        - arn:aws:iam::aws:policy/IAMUserChangePassword
 
   # ============================================================
   # IAM USERS
